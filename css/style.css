@@ -203,10 +203,11 @@ footer {
 
 footer .fas {
   margin: 0 20px;
+  font-size: 38px;
   color: #fff;
 }
 
-footer a:hover {
+footer .fas:hover {
   color: #28a745;
 }
 
