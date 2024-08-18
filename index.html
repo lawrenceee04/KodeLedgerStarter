@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -10,12 +11,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/utilities.css" />
+
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="./css/lightbox.min.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" />
     <title>KodeLedger</title>
+  
   </head>
   <body>
-    <header class="hero">
+    <!-- Home -->
+    <header id="home" class="hero">
       <div id="navbar" class="navbar">
         <h1 class="logo">
           <span class="text-primary">
@@ -33,7 +43,7 @@
         </nav>
       </div>
       <div class="content">
-        <h1>The Sky is the Limit</h1>
+        <h1>The Sky is The Limit</h1>
         <p>We provide world class financial assistance</p>
         <a href="#about" class="btn"
           ><i class="fas fa-chevron-right"></i> Read More</a
@@ -42,6 +52,7 @@
     </header>
 
     <main>
+      <!-- About: Icons -->
       <section id="about" class="icons bg-light">
         <div class="flex-items">
           <div>
@@ -76,6 +87,182 @@
           </div>
         </div>
       </section>
+
+      <!-- About: Solutions -->
+      <section id="about" class="about">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./images/home/people.jpg" alt="About Us" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              <h4>What you are looking for</h4>
+              <h2>We provide bespoke solutions</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis quae rem alias odit quibusdam accusantium accusamus
+                omnis minus! Molestiae at porro dolor, aliquam rerum fuga
+                deleniti ducimus ipsum dolore corporis.
+              </p>
+              <a href="#about" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cases -->
+      <section id="cases" class="cases">
+        <header class="section-header">
+          <h4>This is what we do</h4>
+          <h1>Business Cases</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
+            debitis?
+          </p>
+        </header>
+        <div class="grid-cases">
+          <div class="grid-row">
+            <div>
+              <a href="./images/cases/cases1.jpg" data-lightbox="cases">
+                <img src="./images/cases/cases1.jpg" alt=""/>
+                </a>
+            </div>
+            <div>
+              <a href="./images/cases/cases2.jpg" data-lightbox="cases">
+                <img src="./images/cases/cases2.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="grid-row">
+            <div>
+              <a href="./images/cases/cases3.jpg" data-lightbox="cases">
+                <img src="./images/cases/cases3.jpg" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="./images/cases/cases4.jpg" data-lightbox="cases">
+                <img src="./images/cases/cases4.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="grid-row">
+            <div>
+              <a href="./images/cases/cases5.jpg" data-lightbox="cases">
+                <img src="./images/cases/cases5.jpg" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="./images/cases/cases6.jpg" data-lightbox="cases">
+                <img src="./images/cases/cases6.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="grid-row">
+            <div>
+              <a href="./images/cases/cases7.jpg" data-lightbox="cases">
+                <img src="./images/cases/cases7.jpg" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="./images/cases/cases8.jpg" data-lightbox="cases">
+                <img src="./images/cases/cases8.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+      </section>
+
+      <!-- Blog -->
+      <section id="blog" class="blog">
+        <div class="row">
+          <div class="column">
+            <div class="column-2">
+              <h4 id="date"></h4>
+              <h2>Blog Post One</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora porro at tempore optio esse autem sed minus, recusandae ea nam saepe, illum, illo est eum cumque quae dolore veritatis.</p>
+              <a href="#blog" class="btn btn-secondary">Read Our Blog</a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-1">
+              <img src="./images/home/blog.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Who We Are -->
+      <section class="who-we-are">
+        <div class="section-header">
+          <h4>Who we are</h4>
+          <h1>Our Professional Team</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quod?</p>
+        </div>
+        <div class="professional-team">
+          <div>
+            <img src="./images/team/person1.jpg" alt="" />
+            <h4>Alden Rye</h4>
+            <p>President</p>
+          </div>
+          <div>
+            <img src="./images/team/person2.jpg" alt="" />
+            <h4>Catrice Dominique</h4>
+            <p>Vice President</p>
+          </div>
+          <div>
+            <img src="./images/team/person3.jpg" alt="" />
+            <h4>Benjamin Cruz</h4>
+            <p>Marketing Head</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./images/home/contact.jpg" alt="">
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2">
+              <h1>Request Callback</h1>
+              <input type="name" name="Enter name" id="name-input" class="input" placeholder="Enter name">
+              <input type="email" name="Enter email" id="email-input" class="input" placeholder="Enter email">
+              <input type="phone" name="Enter phone" id="phone-input" class="input" placeholder="Enter phone">
+              <input type="button" value="Send" class="send-button">
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <a href="https://www.facebook.com" class="fas fa-brands fa-facebook"></a>
+        <a href="https://www.twitter.com" class="fas fa-brands fa-twitter"></a>
+        <a href="https://www.youtube.com" class="fas fa-brands fa-youtube"></a>
+        <a href="https://www.linkedin.com" class="fas fa-brands fa-linkedin"></a>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2022 - KodeLedger</p>
+      </div>
+    </footer>
+
+    <!-- External Scripts -->
+    <script src="./js/date.js"></script>
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+    <!-- Lightbox Options -->
+    <script>
+      lightbox.option({
+        resizeDuration: 10,
+        wrapAround: true,
+        fadeDuration: 100,
+        disableScrolling: true,
+      })
+    </script>
   </body>
 </html>
