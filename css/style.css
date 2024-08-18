@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: #fff;
   color: #333;
   line-height: 1.6;
@@ -71,7 +71,7 @@ img {
 
 /* Header */
 .hero {
-  background: url('../images/home/showcase.jpg') no-repeat center center/cover;
+  background: url("../images/home/showcase.jpg") no-repeat center center/cover;
   height: 100vh;
   position: relative;
   color: #fff;
@@ -92,13 +92,13 @@ img {
 }
 
 .hero .content p {
-  font-size: 23;
+  font-size: 23px;
   max-width: 600px;
   margin: 20px 0 30px;
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -127,4 +127,89 @@ img {
   padding: 1rem;
   border-radius: 50%;
   margin-bottom: 15px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.about .column {
+  width: 50%;
+  background-color: #28a745;
+}
+
+.blog .column {
+  width: 50%;
+  background-color: #0284d0;
+}
+
+.who-we-are {
+  padding: 30px;
+}
+
+.professional-team {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.professional-team div {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.professional-team img {
+  border-radius: 50%;
+}
+
+.contact .column {
+  width: 50%;
+  background-color: #f4f4f4;
+}
+
+.column-2 {
+  padding: 30px;
+}
+.column-2 h1 {
+  color: #333333;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.column-2 .input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: none;
+}
+
+.column-2 .send-button {
+  padding: 10px;
+  margin-top: 30px;
+  width: 100%;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+footer {
+  padding: 50px;
+  text-align: center;
+  background-color: #333;
+}
+
+footer .fas {
+  margin: 0 20px;
+  color: #fff;
+}
+
+footer a:hover {
+  color: #28a745;
+}
+
+footer .copyright {
+  color: #fff;
 }

@@ -11,6 +11,7 @@
 .btn {
   cursor: pointer;
   display: inline-block;
+  margin-top: 10px;
   padding: 10px 30px;
   color: #fff;
   background-color: #28a745;
@@ -25,11 +26,13 @@
 .btn-primary {
   background: #28a745;
   color: #fff;
+  border: #fff 1px solid;
 }
 
 .btn-secondary {
   background: #0284d0;
   color: #fff;
+  border: #fff 1px solid;
 }
 
 .btn-dark {
@@ -48,4 +51,83 @@
   text-align: center;
   justify-content: center;
   height: 100%;
+}
+
+.flex-items div {
+  margin: clamp(10px, 5vw, 15px);
+}
+
+/* 2 Column Section */
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  height: 100%;
+}
+
+.column-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.column-2 h2 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  padding: 30px;
+  height: 100%;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header * {
+  margin: 20px 0;
+}
+
+.section-header h1 {
+  font-size: 40px;
+}
+
+.grid-cases {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.grid-row {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.grid-row div {
+  height: 50%;
+  margin: 5px 5px;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.grid-row div a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cases {
+  padding: 30px;
 }
