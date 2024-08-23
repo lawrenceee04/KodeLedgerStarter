@@ -77,7 +77,7 @@ img {
   color: #fff;
 }
 
-.hero .content {
+.hero .slogan {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,52 +86,11 @@ img {
   height: 100%;
   padding: 0 20px;
 }
-
-.blog-post {
-  height: 30vh;
-  background: url("../images/home/blog.jpg") no-repeat center center/cover;
-}
-
-.blog-post-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  height: 100%;
-  padding: 50px 20px;
-}
-
-.blog-post-content h1 {
-  font-size: 30px;
-  font-style: italic;
-  margin-bottom: 10px;
-}
-
-.blog-post-author {
-  margin-bottom: 30px;
-  font-size: 18px;
-  font-style: italic;
-}
-
-.blog-post-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.blog-post-body img {
-  min-width: 20vw;
-  max-width: 25vw;
-  border-radius: 50%;
-  margin: 20px 0;
-}
-
-.hero .content h1 {
+.hero .slogan-h1 {
   font-size: 55px;
 }
 
-.hero .content p {
+.hero .slogan-p {
   font-size: 23px;
   max-width: 600px;
   margin: 20px 0 30px;
@@ -151,8 +110,9 @@ img {
   z-index: 10;
 }
 
-/* Icons */
+/*About: Icons */
 .icons {
+  background: #fff;
   padding: 30px;
 }
 
@@ -169,15 +129,52 @@ img {
   margin-bottom: 15px;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
+/* About: Solutions */
 .about .column {
   width: 50%;
   background-color: #28a745;
+}
+
+.about .column-txt {
+  padding: 30px;
+}
+
+.about .column-txt h2 {
+  color: #fff;
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.cases {
+  padding: 30px;
+}
+
+.grid-cases {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.grid-row {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.grid-row div {
+  height: 50%;
+  margin: 5px 5px;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.grid-row div a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .blog .column {
@@ -193,6 +190,8 @@ img {
   display: flex;
   flex-direction: row;
   margin-top: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .professional-team div {
@@ -204,22 +203,24 @@ img {
   border-radius: 50%;
 }
 
+.blog .column-txt h2 {
+  color: #fff;
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.contact .column h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 40px;
+}
+
 .contact .column {
   width: 50%;
   background-color: #f4f4f4;
 }
 
-.column-2 {
-  padding: 30px;
-}
-
-.column-2 h1 {
-  color: #333333;
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.column-2 .input {
+.contact .input {
   padding: 10px;
   margin: 10px 0;
   width: 100%;
@@ -261,6 +262,50 @@ footer .copyright {
   color: #fff;
 }
 
+.blog-post {
+  height: 30vh;
+  background: url("../images/home/blog.jpg") no-repeat center center/cover;
+}
+
+.blog-post .slogan {
+  font-size: 27px;
+}
+
+.blog-post-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100%;
+  padding: 30px 30px;
+}
+
+.blog-post-content h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.blog-post-author {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.blog-post-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-post-body img {
+  min-width: 20vw;
+  max-width: 25vw;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
 .blog-post-dark-bg .column {
   width: 50%;
 }
@@ -285,4 +330,39 @@ footer .copyright {
 
 .blog-post-light-bg h1 {
   color: #333;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .grid-cases {
+    flex-direction: column;
+  }
+
+  .grid-row {
+    width: 100%;
+  }
+
+  .professional-team {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .professional-team div {
+    width: 80%;
+  }
 }
